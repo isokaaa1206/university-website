@@ -1,0 +1,109 @@
+<!DOCTYPE html>  <html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>University Website Design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/font
+awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="index.html"><img src="images/logo.png" ></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-------contact us-->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.276892331176!2d85.31404057539025!3d27.67783567619946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cbbeac9357%3A0x8f35a679609cb5b9!2z4KSq4KWB4KSy4KWN4KSa4KWL4KSVLCDgpLLgpLLgpL_gpKTgpKrgpYHgpLAgNDQ2MDA!5e0!3m2!1sne!2snp!4v1684645156787!5m2!1sne!2snp"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home-alt" ></i>
+                    <span>
+                        <h5>Pulchowk Road, Anu Building</h5>
+                        <p>Pulchowk, Lalitpur, Nepal</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone-alt" ></i>
+                    <span>
+                        <h5>+977 9826387320</h5>
+                        <p>Monday to Friday, 10AM-6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-open" ></i>
+                    <span>
+                        <h5>universityinfo@gmail.com</h5>
+                        <p>Email Us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="" >
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Mesaage</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+    <!----footer-->
+ 
+    <section class="footer">
+        <center><h4>About Us</h4>
+        <p>A university is an institution of higher education and research which 
+        awards academic degrees in several academic disciplines.<br> Universities 
+        typically offer both undergraduate and postgraduate programs.<br> In the United
+        States, the designation is reserved for colleges that have a graduate school.</p>
+    </center>
+    <div class="icons"><center>
+        <i class="fa-brands fa-facebook fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-twitter fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-instagram fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-linkedin fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </center></div>
+</section>
+
+    <!--------Javacript for Toggle Menu------->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function Menu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body> 
+</html>

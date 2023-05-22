@@ -1,0 +1,128 @@
+<!DOCTYPE html>  <html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>University Website Design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/font
+awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+           <a href="index.html"><img src="images/logo.png" ></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programms For 2023</h1>
+    </section>
+
+    <!----blog page-->
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificate & Online Programms For 2023</h2>
+                <p>University is the place where we spend most of the time of our childhood until we make a transition into a college. We are given an educational certificate for the commencement of our education at the school. This certificate is issued by the school signed by the Block Education Officer, or by the educational board to which the school is affiliated.</p>
+                <br>
+                <p>A certificate of student status, or student certificate, is a certificate that is usually from your university, which proves that you are on a course there right now. It can contain your details, university details, your course details, the dates of study, and whether you are studying full time or part time. The main use of this is due to students enrolled on a course receiving exemptions from council tax. This certificate proves that the holder is a student.</p>
+                <br>
+                <p>Many universities have an online system where you can request and receive your certificate automatically, or have it sent to you after it has been processed. For example, you can find where to request your certificate and more information about this using this page for the University of Coventry and this page for the University of Birmingham.</p>
+                <br>
+                <p>If students want to gain exemption from paying council tax, they will need to provide proof. This comes in the form of the student certificate.
+                  Providing this proof will allow the student access to exemptions to council tax, which will help the students a lot when managing their money. To find out whether students have to pay other taxes, you can click on this link to a Think Student article.</p>
+                
+                  <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment">Your Comment
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                  </div>
+                </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Bussiness Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!----footer-->
+
+    <section class="footer">
+        <center><h4>About Us</h4>
+        <p>A university is an institution of higher education and research which 
+        awards academic degrees in several academic disciplines.<br> Universities 
+        typically offer both undergraduate and postgraduate programs.<br> In the United
+        States, the designation is reserved for colleges that have a graduate school.</p>
+    </center>
+    <div class="icons"><center>
+        <i class="fa-brands fa-facebook fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-twitter fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-instagram fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i class="fa-brands fa-linkedin fa-2xl"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </center></div>
+</section>
+
+    <!--------Javacript for Toggle Menu------->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function Menu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body> 
+</html>
